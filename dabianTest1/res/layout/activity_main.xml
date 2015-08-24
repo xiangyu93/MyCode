@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="答辩小助手"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="70dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/help" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:background="@android:color/holo_red_light"
+            android:text="退出"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="5"
+        android:text="答辩"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="130dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="请选择你的身份"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnHost"
+            android:layout_width="5dp"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/host1"/>
+
+        <Button
+            android:id="@+id/btnTeacher"
+            android:layout_width="5dp"
+            android:layout_height="190dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/judge1" />
+    </LinearLayout>
+
+</LinearLayout>
